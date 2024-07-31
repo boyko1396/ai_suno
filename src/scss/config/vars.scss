@@ -1,0 +1,116 @@
+$siteResolution: 1px;
+$mainFont: 'Tilda Sans';
+$mainWeight: 400;
+$lineHeight1: 1.3;
+$lineHeight2: 1;
+$lineHeight3: 1.25;
+$lineHeight4: 1;
+$lineHeight5: 1.2;
+$lineHeightDefault: $lineHeight1;
+
+$containerWidthMd: 1248rem;
+
+$gap: 12rem;
+$gapFluid: 24rem;
+
+$radiusXs: 10rem;
+$radiusSm: 20rem;
+$radiusMd: 44rem;
+
+$blurSm: 5px;
+
+$rhythmLg1: 120rem;
+$rhythmLg2: 40rem;
+$rhythmLg3: 20rem;
+$rhythmLg4: 16rem;
+$rhythmLg5: 80rem;
+$rhythmLg6: 48rem;
+$rhythmLg7: 12rem;
+$rhythmLg8: 32rem;
+$rhythmLg9: 10rem;
+$rhythmLg10: 25rem;
+$rhythmLg11: 14rem;
+$rhythmLg12: 24rem;
+$rhythmLg13: 60rem;
+$rhythmLg14: 8rem;
+$rhythmLg15: 4rem;
+$rhythmLg16: 86rem;
+$rhythmLg17: 36rem;
+$rhythmLg18: 19rem;
+$rhythmLg19: 48rem;
+$rhythmLg20: 130rem;
+$rhythmLg21: 90rem;
+
+$whiteColor: #ffffff;
+$blackColor: #1B1B1B;
+$blackFullColor: #000000;
+$greyColor: #F3F3F3;
+$lightGreyColor: #E3E3E3;
+$lightSteelColor: #656565;
+$greySteelColor: #5B5B5B;
+$greyDarkColor: #3F3F3F;
+$mediumGreyColor: #9A9A9A;
+$blueColor: #F02121;
+$silverColor: #B0B0B0;
+$redColor: #D92D20;
+$lightRedColor: #FEE4E2;
+$accentColor: $blueColor;
+
+$gradientBlackCard1: linear-gradient(180deg, rgba($blackFullColor, 0) 0%, $blackFullColor 100%);
+
+$fontFamily: $mainFont, Open Sans, sans-serif, Arial;
+$fontColor: $blackColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+$transitionFast: all .32s 0ms;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 18rem;
+  --fs-1: 54rem;
+  --fs-2: 40rem;
+  --fs-3: 24rem;
+  --fs-4: 20rem;
+  --fs-5: 18rem;
+  --fs-6: 16rem;
+  --fs-7: 14rem;
+  --fs-8: 12rem;
+  --fs-9: 10rem;
+
+  --gap: 12rem;
+  --gap-: -12rem;
+  --gap-fluid: 24rem;
+  --gap-fluid-: -24rem;
+  --gap-container: var(--gap-fluid);
+  --gap-container-: var(--gap-fluid-);
+
+  --vh: 1vh;
+  @media (max-width: $lg) {
+  }
+  @media (max-width: $sm) {
+    --fs-default: 16rem;
+
+    --fs-1: 30rem;
+    --fs-2: 24rem;
+    --fs-3: 20rem;
+    --fs-4: 18rem;
+
+    --gap-fluid: 16rem;
+    --gap-fluid-: -16rem;
+  }
+}

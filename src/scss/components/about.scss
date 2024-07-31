@@ -1,0 +1,32 @@
+.about {
+  padding: $rhythmLg1 0 $rhythmLg21;
+  @media (max-width: $lg) {
+    padding-top: 90rem;
+  }
+  &__container {
+  }
+  &__title {
+    max-width: 700rem;
+    margin: 0 0 $rhythmLg2;
+    @media (max-width: $sm) {
+      margin-bottom: 24rem;
+    }
+  }
+  &__list {
+    &-row {
+      @media (max-width: $sm) {
+        margin-bottom: -24rem;
+      }
+    }
+    &-col {
+      @media (max-width: $sm) {
+        max-width: 100%;
+        margin-bottom: 24rem;
+        flex-basis: 100%;
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}

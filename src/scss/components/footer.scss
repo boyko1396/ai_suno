@@ -1,0 +1,115 @@
+.footer {
+  background: $blackFullColor;
+  padding: 90rem 0 86rem;
+  font-size: var(--fs-5);
+  color: $whiteColor;
+  position: relative;
+  @media (max-width: $lg) {
+    padding: 64rem 0;
+  }
+  @media (max-width: $sm) {
+    font-size: 16rem;
+  }
+  &__container {
+  }
+  &__row {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    @media (max-width: $lg) {
+      flex-wrap: wrap;
+    }
+  }
+  &__col {
+    &--logo {
+      flex-shrink: 0;
+      @media (max-width: $lg) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+      @media (max-width: $sm) {
+        text-align: center;
+      }
+    }
+    &--nav {
+      flex-grow: 1;
+      @media (max-width: $lg) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &--action {
+      flex-shrink: 0;
+      @media (max-width: $lg) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__logo {
+    @media (max-width: $lg) {
+      margin: 0 0 var(--gap-fluid);
+    }
+    @media (max-width: $sm) {
+      width: 200rem;
+      height: 70rem;
+      margin-bottom: 30rem;
+    }
+  }
+  &__nav {
+    padding: 6rem 24rem 6rem $rhythmLg5;
+    font-weight: bold;
+    line-height: $lineHeight3;
+    @media (max-width: $lg) {
+      padding: 0;
+    }
+    &--theme {
+      &-white {
+      }
+      &-grey {
+        font-size: var(--fs-7);
+        color: $silverColor;
+      }
+    }
+    &-list {
+      margin: 0 -12rem;
+      padding: 0;
+      display: flex;
+      list-style-type: none;
+      @media (max-width: $lg) {
+        flex-wrap: wrap;
+      }
+    }
+    &-item {
+      margin: 0 12rem;
+      padding: 0;
+      @media (max-width: $lg) {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+      }
+    }
+    &-link {
+      @extend %area-click;
+      transition: $transition;
+      &:hover {
+        text-decoration: none;
+        @media (min-width: $lg-mf) {
+          color: $accentColor;
+        }
+      }
+    }
+  }
+  &__btn-appeal {
+    @media (max-width: $lg) {
+      margin: var(--gap-fluid) 0;
+    }
+    @media (max-width: $sm) {
+      width: 100%;
+    }
+  }
+  &__copyright {
+    margin: 30rem 0 0;
+    font-size: var(--fs-7);
+    color: $silverColor;
+  }
+}

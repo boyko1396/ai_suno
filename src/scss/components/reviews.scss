@@ -1,0 +1,93 @@
+.reviews {
+  background: $blackColor;
+  padding: $rhythmLg1 0 $rhythmLg21;
+  color: $whiteColor;
+  @media (max-width: $lg) {
+    padding-top: 90rem;
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 $rhythmLg2;
+    @media (max-width: $sm) {
+      margin-bottom: 24rem;
+    }
+  }
+  &__main {
+    &-row {
+    }
+    &-col {
+      &--reviews {
+        @media (max-width: $md) {
+          max-width: 100%;
+          margin-bottom: 24rem;
+          flex-basis: 100%;
+        }
+      }
+      &--appeal {
+        @media (max-width: $md) {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+  &__list {
+    margin-bottom: -24rem;
+    &-col {
+      margin-bottom: 24rem;
+      @media (max-width: $xs) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+  &__rating {
+    background: $blackFullColor;
+    height: 100%;
+    padding: $rhythmLg17 $rhythmLg12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: $lg) {
+      border-radius: 36rem;
+    }
+    @media (max-width: $sm) {
+      padding-top: 30rem;
+      padding-bottom: 24rem;
+    }
+    &-logo {
+      width: 100%;
+      max-width: 180rem;
+      margin: 0 auto 30rem;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    &-progress {
+      margin: 0 0 12rem;
+    }
+    &-count {
+      margin: 0;
+      font-weight: bold;
+      @media (max-width: $sm) {
+        font-size: 24rem;
+      }
+    }
+    &-subtitle {
+      margin: 0 0 $rhythmLg12;
+      @media (max-width: $sm) {
+        font-size: 18rem;
+      }
+    }
+    &-btn {
+      min-width: 220rem;
+    }
+  }
+}

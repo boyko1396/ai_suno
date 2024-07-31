@@ -1,0 +1,48 @@
+.features {
+  background: $blackColor;
+  padding: $rhythmLg1 0 $rhythmLg21;
+  color: $whiteColor;
+  @media (max-width: $lg) {
+    padding-top: 90rem;
+  }
+  &__container {
+    > :first-child {
+      margin-top: 0;
+    }
+  }
+  &__title {
+    margin: $rhythmLg5 0 $rhythmLg2;
+    @media (max-width: $sm) {
+      margin-top: 48rem;
+      margin-bottom: 24rem;
+    }
+  }
+  &__description {
+    max-width: 58%;
+    margin: -28rem 0 $rhythmLg2;
+    color: $greyColor;
+    @media (max-width: $lg) {
+      max-width: 88%;
+    }
+    @media (max-width: $sm) {
+      margin-top: -12rem;
+      margin-bottom: 48rem;
+      font-size: 18rem;
+    }
+  }
+  &__list {
+    &-row {
+      margin-bottom: -1*$rhythmLg12;
+    }
+    &-col {
+      margin-bottom: $rhythmLg12;
+      @media (max-width: $md) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}

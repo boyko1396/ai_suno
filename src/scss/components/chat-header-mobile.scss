@@ -1,0 +1,73 @@
+.chat-header-mobile {
+  width: 100%;
+  min-height: 74rem;
+  padding: 20rem 0;
+  @media (min-width: $md-mf) {
+    display: none;
+  }
+  @media (max-width: $sm) {
+  }
+  &__container {
+    @media (max-width: $sm) {
+      padding-right: 16rem;
+      padding-left: 16rem;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__toggle {
+    @extend %area-click, %btn-reset;
+    @media (max-width: $md) {
+      width: 30rem;
+      height: 30rem;
+      margin: 0 0 0 -6rem;
+      display: flex;
+      flex-shrink: 0;
+      color: $whiteColor;
+      position: relative;
+      transition: $transition;
+    }
+    .u-icon {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &.js-chat-menu-open {
+      &:before {
+        transition: $transition;
+        transition-property: opacity, visibility;
+      }
+      &:not(.is-active) {
+        &:before {
+          pointer-events: none;
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+      &:before {
+        @media (max-width: $md) {
+          background: rgba($blackFullColor, .5);
+          backdrop-filter: blur(3px);
+          content: '';
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 996;
+        }
+      }
+    }
+  }
+  &__btn-new-chat {
+    padding-right: 16rem;
+    padding-left: 16rem;
+    font-size: 14rem;
+    color: $blackColor;
+  }
+}

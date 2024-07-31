@@ -1,0 +1,24 @@
+.faq {
+  padding: $rhythmLg1 0 $rhythmLg5;
+  @media (max-width: $lg) {
+    padding-top: 90rem;
+    padding-bottom: 90rem;
+  }
+  &__container {
+  }
+  &__title {
+    margin-bottom: $rhythmLg2;
+    @media (max-width: $sm) {
+      margin-bottom: 24rem;
+    }
+  }
+  &__list {
+    &-card {
+      &:first-child {
+      }
+      &:not(:last-child) {
+        margin-bottom: $rhythmLg14;
+      }
+    }
+  }
+}

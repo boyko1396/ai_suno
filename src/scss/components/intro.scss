@@ -1,0 +1,92 @@
+.intro {
+  padding: 116rem 0 128rem;
+  color: $whiteColor;
+  position: relative;
+  z-index: 0;
+  @media (max-width: $lg) {
+    padding: 84rem 0 72rem;
+  }
+  &__bg {
+    @extend %img-cover, %gradient-black-cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -2;
+    &:before {
+      background: rgba($blackFullColor, .5);
+    }
+  }
+  &__container {
+  }
+  &__row {
+  }
+  &__col {
+    &--content {
+      @media (max-width: $lg) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $lg) {
+    }
+    @media (max-width: $sm) {
+    }
+  }
+  &__title {
+    margin-bottom: 22rem;
+    @media (max-width: $sm) {
+      margin-bottom: 16rem;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 36rem;
+    font-weight: normal;
+  }
+  &__action {
+    margin: 0 -36rem -24rem 0;
+    padding-bottom: $rhythmLg13;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: $sm) {
+      padding-bottom: 52rem;
+    }
+    &-item {
+      margin: 0 36rem 24rem 0;
+      @media (max-width: $xs) {
+        width: 100%;
+      }
+    }
+    &-btn {
+      min-width: 220rem;
+      display: flex;
+      @media (max-width: $xs) {
+      }
+    }
+  }
+  &__info {
+    margin: 0 -36rem -24rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: $lg) {
+    }
+    @media (max-width: $sm) {
+    }
+    &-card {
+      margin: 0 36rem 24rem 0;
+      @media (max-width: $md) {
+      }
+      @media (max-width: $xs) {
+        width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+}

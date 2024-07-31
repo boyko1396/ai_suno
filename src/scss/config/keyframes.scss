@@ -1,0 +1,33 @@
+@keyframes cursor-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes mouse-touch {
+  0% {
+    transform: rotate(0deg) translate3d(22rem, 0, 0) rotate(0deg);
+  }
+  80% {
+    transform: rotate(-360deg) translate3d(22rem, 0, 0) rotate(360deg);
+  }
+  100% {
+    transform: rotate(-360deg) translate3d(22rem, 0, 0) rotate(360deg);
+  }
+}
+
+@keyframes mouse-touch-icon {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(-12deg);
+  }
+  80%, 100% {
+    transform: rotate(-5deg);
+  }
+}

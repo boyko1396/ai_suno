@@ -1,0 +1,16 @@
+.login-page {
+  background: $blackColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  color: $whiteColor;
+  @media (max-width: $lg) {
+  }
+  @media (max-width: $sm) {
+  }
+  &__container {
+  }
+  &__block {
+  }
+}
