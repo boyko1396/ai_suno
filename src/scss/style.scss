@@ -15,6 +15,7 @@
 @import 'config/default';
 
 /** Libraries */
+@import 'libs/intlTelInput';
 
 /** Common parameters, templates, and utility classes */
 @import 'config/media';
@@ -22,6 +23,7 @@
 
 /** Common BEM blocks used throughout the project */
 @import 'config/common';
+@import 'components/intlTelInput';
 @import 'components/popup';
 @import 'components/header';
 @import 'components/footer';
