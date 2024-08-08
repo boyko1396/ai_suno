@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'AI Suno - Registration email'
+  })
+  <body class="u-scrollbar">
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- login-page BEGIN -->
+        <section class="login-page">
+          <div class="login-page__container">
+            <div class="login-block login-page__block">
+              <div class="row login-block__row">
+                <div class="row__col--6 login-block__col login-block__col--media">
+                  <div class="login-block__media">
+                    <picture class="login-block__hero">
+                      <source 
+                        srcset="images/login-page-hero.webp 1x, images/login-page-hero@2x.webp 2x" 
+                        type="image/webp">
+                      <img 
+                        src="images/login-page-hero.jpg" 
+                        srcset="images/login-page-hero.jpg 1x, images/login-page-hero@2x.jpg 2x" 
+                        alt="Попробуйте чат за 1 рубль">
+                    </picture>
+                  </div>
+                </div>
+                <div class="row__col--6 login-block__col login-block__col--content">
+                  <div class="padding-y-48 login-block__content">
+                    <h1 class="font-size-2 login-block__title">Создайте аккаунт</h1>
+                    <h2 class="font-size-6 login-block__subtitle">Зарегистрируйтесь через электронную почту</h2>
+                    <form action="#" class="login-block__form">
+                      <div class="u-input login-block__form-input">
+                        <label class="u-input__label">
+                          <input type="email" name="email" class="u-input__el u-input__el--type-text u-input__el--size-md u-input__el--theme-grey-outline" required placeholder="mail@example.com">
+                        </label>
+                      </div>
+                      <div class="u-input login-block__form-input">
+                        <label class="u-input__label">
+                          <input type="password" name="password" class="u-input__el u-input__el--type-text u-input__el--size-md u-input__el--theme-grey-outline" required placeholder="Пароль">
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn--size-lg btn--theme-accent btn--state-accent-simple-hover login-block__form-btn" disabled>
+                        <span class="btn__inner">
+                          <span class="btn__title">Зарегистрироваться</span>
+                        </span>
+                      </button>
+                    </form>
+                    <div class="u-content form-privacy login-block__privacy">
+                      <p>Создавая аккаунт, вы соглашаетесь с нашими <a href="terms.html" target="_blank">Условиями использования</a> и&nbsp;<a href="privacy.html" target="_blank">Политикой конфиденциальности</a></p>
+                    </div>
+                    <p class="font-size-6 login-block__footer">Уже есть аккаунт? <a href="registration.html"><strong>Войти</strong></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- login-page END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

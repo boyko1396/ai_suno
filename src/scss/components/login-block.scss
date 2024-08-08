@@ -139,6 +139,12 @@
       }
     }
   }
+  &__form + &__privacy {
+    margin-top: 12rem;
+  }
+  &__form + &__privacy  + .login-block__footer {
+    margin-top: 32rem;
+  }
   &__privacy {
     margin: 0;
     color: $greyColor;
